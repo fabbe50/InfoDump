@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "infodump",
+  "version": "${version}",
+  "name": "InfoDump",
+  "description": "Dump information about the game.",
+  "authors": [
+    "fabbe50"
+  ],
+  "contact": {
+    "homepage": "https://fabbe50.com"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/infodump/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.fabbe50.infodump.fabric.InfodumpFabric"
+    ],
+    "client": [
+      "com.fabbe50.infodump.fabric.client.InfodumpFabricClient"
+    ]
+  },
+  "mixins": [
+    "infodump.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
